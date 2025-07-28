@@ -54,17 +54,11 @@ Este proyecto demuestra una estrategia de modernización de software para la apl
 git clone <url-del-repositorio>
 cd admin_events_upgrade/admin_events_attendees
 
-# 2. Configuración automática completa
-./setup.sh
-
-# 3. Crear usuario administrador
-./create_admin.sh
-
-# 4. Ejecutar tests de seguridad
-./run_tests.sh
-
-# 5. Iniciar servidor
+# 2. Iniciar servidor
 ./start.sh
+
+# 3. Ejecutar tests de seguridad
+./run_tests.sh
 ```
 
 ## Enfoque de Modernización
@@ -144,15 +138,13 @@ Las colecciones incluyen pruebas automatizadas para:
 ### Uso Rápido
 
 ```bash
-# 1. Clonar el repositorio
-git clone <url-del-repositorio>
+# 1. Importar en Postman las colecciones y environments
+# 2. Configurar el environment apropiado (Enhanced o Local)
+# 3. Asegurar que el servidor esté funcionando
 cd admin_events_upgrade/admin_events_attendees
+./run.sh
 
-# 2. Iniciar servidor
-./start.sh
-
-# 3. Ejecutar tests de seguridad
-./run_tests.sh
+# 4. Ejecutar las pruebas desde Postman Collection Runner
 ```
 
 Para más detalles sobre el uso específico de cada colección, consultar el archivo `/admin_events_attendees/postman/README.md`.
