@@ -144,13 +144,15 @@ Las colecciones incluyen pruebas automatizadas para:
 ### Uso Rápido
 
 ```bash
-# 1. Importar en Postman las colecciones y environments
-# 2. Configurar el environment apropiado (Enhanced o Local)
-# 3. Asegurar que el servidor esté funcionando
+# 1. Clonar el repositorio
+git clone <url-del-repositorio>
 cd admin_events_upgrade/admin_events_attendees
-./run.sh
 
-# 4. Ejecutar las pruebas desde Postman Collection Runner
+# 2. Iniciar servidor
+./start.sh
+
+# 3. Ejecutar tests de seguridad
+./run_tests.sh
 ```
 
 Para más detalles sobre el uso específico de cada colección, consultar el archivo `/admin_events_attendees/postman/README.md`.
